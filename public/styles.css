@@ -1,0 +1,159 @@
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts and body */
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background: #292c30;
+  color: #e0e0e0;
+  padding: 0 16px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  background-color: #1c1f23;
+  margin: 0;
+  padding: 16px 32px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow */
+  border-bottom: 2px solid #16181c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+header:hover {
+  background-color: #14171a;
+}
+
+header h1 {
+  color: #e0e0e0;
+  font-family: "McLaren", cursive;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+/* Note styles */
+.note {
+  background: #1c1f23;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 320px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+.note:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+.note h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #e0e0e0;
+}
+
+.note p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #b0b0b0;
+  line-height: 1.5;
+}
+
+.note button {
+  align-self: flex-end;
+  color: #67b2d1;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.2s ease;
+}
+
+.note button:hover {
+  transform: scale(1.2);
+}
+
+/* Form styles */
+form {
+  width: 400px;
+  margin: 30px auto 20px auto;
+  background: #1c1f23;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+form:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  outline: none;
+  font-size: 1.1rem;
+  font-family: inherit;
+  resize: none;
+  margin-bottom: 15px;
+  background-color: #242729;
+  color: #e0e0e0;
+  transition: background-color 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+  background-color: #292c30;
+}
+
+form button {
+  align-self: flex-end;
+  background: #67b2d1;
+  color: #e0e0e0;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease;
+}
+
+form button:hover {
+  background-color: #5b9cb9;
+}
+
+/* Footer styles */
+footer {
+  background-color: #1c1f23;
+  text-align: center;
+  width: 100%;
+  padding: 16px;
+  color: #b0b0b0;
+  border-top: 2px solid #16181c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
